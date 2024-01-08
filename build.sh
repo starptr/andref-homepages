@@ -17,6 +17,10 @@ os.makedirs("build", exist_ok=True)
 
 res = subprocess.run(["git", "ls-files"], check=True, capture_output=True, text=True)
 files = res.stdout.splitlines()
+def do_not_apply(file_path):
+    _, ext = os.path.splitext(file_path)
+    return ext == '.sh' or ext == '.py'
+files = filter(lambda file: not do_not_apply(file), files)
 
 for file in files:
     content = None
