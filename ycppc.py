@@ -12,6 +12,12 @@ body {
     font-family: Tahoma, Verdana, Arial, sans-serif;
     max-width: 35em;
     padding: 1em;
+    background-color: #fafafa;
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+    }
 }
 </style>
 <!-- YCPPC generated tags for tilde-normalized-head-tags end -->"""
