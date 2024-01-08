@@ -5,6 +5,7 @@ import subprocess
 import glob
 import os
 from pathlib import Path
+import ycppc
 
 def set_cwd_to_script_dir():
     abspath = os.path.abspath(__file__)
@@ -21,6 +22,8 @@ for file in files:
     content = None
     with open(file, 'r') as fin:
         content = fin.read()
+    
+    content = ycppc.apply(content)
 
     output_path = Path(f'build/{file}')
     output_path.parent.mkdir(exist_ok=True, parents=True)
