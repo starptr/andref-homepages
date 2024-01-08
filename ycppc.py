@@ -5,6 +5,15 @@ ycppc_indication_re = re.compile(r"<!-- YCPPC: (\S+) -->")
 tilde_normalized_head_tags = """<!-- YCPPC generated tags for tilde-normalized-head-tags begin -->
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
+<style>
+html { color-scheme: light dark; }
+body {
+    margin: 0 auto;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+    max-width: 35em;
+    padding: 1em;
+}
+</style>
 <!-- YCPPC generated tags for tilde-normalized-head-tags end -->"""
 
 def apply(text):
