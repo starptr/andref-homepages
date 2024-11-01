@@ -1,0 +1,29 @@
+--------------------------------------------------------------------------------
+Welcome to
+            _____  
+           |  __ \ 
+   /_\ /|  | |__) |
+  |/ \_/   |  _  / 
+           | | \ \ 
+           |_|  \_\
+  ______    ______ 
+ |  ____|  |  ____|
+ | |__     | |__   
+ |  __|    |  __|  
+ | |____   | |     
+ |______|  |_|     
+
+--------------------------------------------------------------------------------
+~ref Bulletin Board:
+- It's LIVE! Go to https://tilde.andref.app/ to see the homepage.
+- There is a Discord server somewhere…
+- You can now host webpages using `~/public_html`! Try placing an `index.html`
+  there and navigate to https://tilde.andref.app/~username`.
+- Send and read mail with `mutt`!
+- Update your public info with `chfn` and try running `finger username` 😳😭
+- `echo "take over wyoming" > ~/.project`
+- Show this message again by running `motd.sh`!
+- Post status updates with `status.sh`! Make sure to run `rebuild-statuses.sh`
+  after to update the webpage.
+- GLHF!
+--------------------------------------------------------------------------------
