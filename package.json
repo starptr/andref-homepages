@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "parcel src/**/*.html",
-    "build": "parcel build src/**/*.html --public-url ./ --dist-dir build"
+    "build": "parcel build src/**/*.html --public-url ./ --dist-dir ../saturn/build/andref-homepages"
   },
   "parcelIgnore": [
     "~.+"
@@ -13,6 +13,7 @@
   "license": "ISC",
   "devDependencies": {
     "parcel": "^2.11.0",
-    "parcel-resolver-ignore": "^2.2.0"
+    "parcel-resolver-ignore": "^2.2.0",
+    "posthtml-include": "^2.0.1"
   }
 }
