@@ -41,7 +41,7 @@ It's purpose is to facilitate the creative freedom that comes with free cloud co
 
 <h2>Who's everyone?</h2>
 <p>Here's a (manually updated) list of homepages:</p>
-<ul>
+<ul id="homes">
     <li><a href="~starptr">~starptr</a></li>
     <li><a href="~awang">~awang</a></li>
     <li><a href="~nugnug">~nugnug</a></li>
@@ -61,5 +61,17 @@ It's purpose is to facilitate the creative freedom that comes with free cloud co
 <h2>Wow this page is bare and ugly!</h2>
 <p>😭😭 yeah this page is incomplete but if you can help, PLEASE message ~starptr.
 The code for this page is <a href="https://github.com/starptr/andref-homepages">hosted here</a>.</p>
+<script>
+    const homes = document.getElementById("homes");
+    function shuffleArray(originalArray) {
+        const array = originalArray.slice();
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
+    homes.replaceChildren(...shuffleArray(Array.from(homes.children)));
+</script>
 </body>
 </html>
